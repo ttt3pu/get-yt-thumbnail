@@ -1,0 +1,32 @@
+{
+  "name": "get-yt-thumbnail",
+  "version": "1.0.0",
+  "description": "Get thumbnail uses YouTube video ID.",
+  "source": "src/get-yt-thumbnail.ts",
+  "main": "dist/get-yt-thumbnail.js",
+  "exports": "dist/get-yt-thumbnail.modern.js",
+  "module": "dist/get-yt-thumbnail.module.js",
+  "unpkg": "dist/get-yt-thumbnail.umd.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttt3pu/get-yt-thumbnail.git"
+  },
+  "keywords": [],
+  "author": "attt (https://attt.hachiware.cat)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ttt3pu/get-yt-thumbnail/issues"
+  },
+  "homepage": "https://github.com/ttt3pu/get-yt-thumbnail#readme",
+  "devDependencies": {
+    "microbundle": "^0.13.0"
+  }
+}

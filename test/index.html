@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  High Quality Video | Get auto<br>
+  <img id="highQualityAuto" alt>
+
+  High Quality Video | Get < sddefault<br>
+  <img id="highQualitySdDefault" alt>
+
+  Low Quality Video | Get auto<br>
+  <img id="lowQualityAuto" alt>
+
+  <script src="../dist/get-yt-thumbnail.umd.js"></script>
+
+  <script>
+  (async () => {
+    const highQualityAuto = await getYtThumbnail('aqz-KE-bpKQ');
+    document.getElementById('highQualityAuto').src = highQualityAuto;
+
+    const highQualitySdDefault = await getYtThumbnail('aqz-KE-bpKQ', 'sddefault.jpg');
+    document.getElementById('highQualitySdDefault').src = highQualitySdDefault;
+
+    const lowQualityAuto = await getYtThumbnail('eVUGwUOg4Ek');
+    document.getElementById('lowQualityAuto').src = lowQualityAuto;
+  })();
+  </script>
+</body>
+</html>
